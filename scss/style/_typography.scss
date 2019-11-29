@@ -1,0 +1,125 @@
+
+//=====================================
+//
+//  ######  #####  ##    ##  ######
+//    ##    ##      ##  ##     ##
+//    ##    #####    ####      ##
+//    ##    ##      ##  ##     ##
+//    ##    #####  ##    ##    ##
+//
+//=====================================
+
+h1{
+    font-family: $font-family;
+    font-weight:600;
+    color:$black;
+    text-transform:uppercase;
+    font-size:1.8rem;
+    @media (max-width:767px){
+        font-size:1.5rem;
+    }
+}
+h1.home{
+    font-family: $font-family;
+    font-weight:800;
+    color:$secondary-color;
+    text-transform:uppercase;
+    font-size:3rem;
+    @media (max-width:767px){
+        font-size:2rem;
+    }
+}
+h2{
+    font-size:1.8rem;
+    font-family:$font-family-2;
+    font-weight: 400;
+    color: #424343;
+    @media (max-width:767px){
+        font-size:1.3rem;
+    }
+}
+h3{
+    font-size:1.3rem;
+    font-family:$font-family-2;
+    font-weight: 700;
+    margin-bottom:15px;
+    text-transform: uppercase;
+    @media (max-width:767px){
+        font-size:1rem;
+    }
+}
+h4{
+    font-size:1.2rem;
+    font-family:$font-family-2;
+    font-weight: 700;
+    margin-bottom:15px;
+    text-transform: uppercase;
+}
+h5{
+
+}
+h6{
+    
+}
+p{
+    font-family: $font-family-2;
+    font-size:1rem;
+    line-height: 1.4rem;
+}
+a{
+    color:$secondary-color;
+    text-decoration:underline;
+}
+li{
+    font-family: $font-family-2;
+    font-size:1.0625rem;
+}
+.pop--800{
+    font-family: $font-family;
+    font-weight: 800;
+}
+.large-full-width{
+    font-size:3.5rem;
+    padding:20px 0px;
+}
+.medium-font{
+    font-size:1.5rem;
+}
+.lower--case{
+    text-transform:lowercase !important;
+}
+.upper--case{
+    text-transform:uppercase !important;
+}
+.small{
+    font-size:80%;
+}
+.bold{
+    font-weight:700;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration:underline !important;
+}
+.no-underline{
+    text-decoration:none !important;
+}
+.text-left{
+    text-align:left !important;
+}
+.text-right{
+    text-align:right !important;
+}
+.text-center{
+    text-align:center !important;
+}
+.float--left{
+    float:left;
+}
+.float--right{
+    float:right;
+}
+
+

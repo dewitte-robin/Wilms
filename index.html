@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teamworks</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Poppins:600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <script>
+        function changeClass(elem, className1, className2) {
+            elem.className = (elem.className == className1) ? className2 : className1;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="container grid">
+            <div class="col-12 header-logo">
+                <img src="static/images/teamworks_logowit.png" alt="Teamworks" width="250px" height="auto">
+            </div>
+            <div class="col-12 main-nav">
+                <nav class="navigation">
+                            <div id="navToggle" class="closed" onclick="changeClass(navBlock,'open','closed');changeClass(navToggle,'open','closed');">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div id="navBlock" class="nav-block closed">
+                                <ul class="nav-links">
+                                    <li  class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Realisaties</a></li>
+                                    <li><a href="#">Horeca-inrichting</a></li>
+                                    <li><a href="#">Winkel-inrichting</a></li>
+                                    <li><a href="#">Kantoor-inrichting</a></li>
+                                    <li><a href="#">Woning-inrichting</a></li>
+                                    <li><a href="#">Over ons</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                </nav>
+            </div>
+            <div class="col-12 header-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="static/images/slider/slide_1.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_2.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_3.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_4.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_5.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_6.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_7.jpg" alt="Teamworks"></div>
+                        <div class="swiper-slide"><img src="static/images/slider/slide_10.jpg" alt="Teamworks"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="col-12 header-cta">
+                <a href="#" class="btn btn-white">Bekijk al onze realisaties</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-content">
+        <div class="grid">
+            <div class="col-4_sm-12 grid content content-left">
+                <div class="col-12 inrichting-item">
+                    <img src="static/images/slider/slide_3.jpg" alt="Teamwork" width="100%">
+                    <h2 class="upper--case"><span class="red pop--800">horeca</span>-inrichting</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Meer over horeca-inrichting</a>
+                </div>
+                <div class="col-12 inrichting-item">
+                        <img src="static/images/slider/slide_4.jpg" alt="Teamwork" width="100%">
+                        <h2 class="upper--case"><span class="red pop--800">kantoor</span>-inrichting</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#">Meer over kantoorinrichting</a>
+                </div>
+            </div>
+            <div class="col-4_sm-12 grid content content-center">
+                <div class="overlay">
+                <div class="col-12">
+                    <p class="medium-font">Contacteer ons<br> voor een afspraak</p>
+                    <p class="white--border"><img src="static/icons/call-answer.svg" alt="Teamworks"> 013 55 49 69</p>
+                    <p class="upper--case medium-font">Unieke & verrassende</p>
+                    <p class="upper--case large-full-width">interieurs</p>
+                    <p class="upper--case medium-font">voor</p>
+                    <br><br>
+                    <div>
+                        <img src="static/icons/restaurant_menu-24px.svg" alt="Teamworks" width="50px">
+                        <p class="upper--case">Horeca</p>
+                    </div>
+                    <br>
+                    <div>
+                        <img src="static/icons/personal_video-24px.svg" alt="Teamworks" width="50px">
+                        <p class="upper--case">Kantoren</p>
+                    </div>
+                    <br>
+                    <div>
+                        <img src="static/icons/local_offer-24px.svg" alt="Teamworks" width="50px">
+                        <p class="upper--case">Winkels</p>
+                    </div>
+                    <br>
+                    <div>
+                        <img src="static/icons/home-24px.svg" alt="Teamworks" width="50px">
+                        <p class="upper--case">Woningen</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-4_sm-12 grid content content-right">
+                    <div class="col-12 inrichting-item">
+                        <img src="static/images/slider/slide_3.jpg" alt="Teamwork" width="100%">
+                        <h2 class="upper--case"><span class="red pop--800">horeca</span>-inrichting</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#">Meer over horeca-inrichting</a>
+                    </div>
+                    <div class="col-12 inrichting-item">
+                        <img src="static/images/slider/slide_4.jpg" alt="Teamwork" width="100%">
+                        <h2 class="upper--case"><span class="red pop--800">kantoor</span>-inrichting</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#">Meer over kantoorinrichting</a>
+                    </div>
+            </div>
+            <div class="col-12_sm-12 content">
+                <h1>interieurinrichting</h1>
+                <h3>voor horeca, winkels, kantoren & woningen</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="information-block">
+        <div class="container grid">
+            <div class="col-12 grid information-block-container">
+                <div class="col-6_sm-12 grid information-block-left">
+                    <h4>20 jaar expertise in interieurprojecten</h4>
+                    <p>Teamwork’s Interiors is gespecialiseerd in interieurinrichtingen en totaalprojecten.</p>
+                    <br>
+                    <div class="col-3_sm-12 image">
+                        <img src="static/images/bua-thai.jpg" alt="Temaworks">
+                    </div>
+                    <div class="col-9_sm-12">
+                        <p>
+                            Teamwork’s Interiors is gespecialiseerd in interieurinrichtingen en totaalprojecten. We realiseren projecten voor de betere brasseries en restaurants, bekende retailers en kledingswinkels en voor kantoren en woningen.
+                        </p>
+                    </div>
+                    <div class="col-12 no--padding">
+                    <a href="#" class="btn btn-primary float--right">Lees meer</a>
+                    </div>
+                </div>
+                <div class="col-6_sm-12 information-block-right">
+                    <h4>Waarom kiezen voor teamwork's interiors</h4>
+                    <ul class="check">
+                        <li>Totaalaanpak van idee tot oplevering</li>
+                        <li>Interieurinrichting en herinrichting op maat</li>
+                        <li>Vaste ploeg met creatieve, bekwame medewerkers</li>
+                        <li>Transparante planning en budget</li>
+                        <li>Projecten in heel Vlaanderen</li>
+                        <li>+20 jaar ervaring</li>
+                        <li>Betrouwbare partner</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary float--right">Contacteer ons</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="grid container">
+            <div class="col-3_md-6_sm-12 footer-logo">
+                <img src="static/images/889A022A.jpg" alt="Teamworks" width="250px" height="auto">
+            </div>
+            <div class="col-3_md-6_sm-12 grid-center footer-icons">
+                <a href="#"><img src="static/icons/facebook.svg" alt="Facebook" width="40px"></a> 
+                <a href="#"><img src="static/icons/instagram.svg" alt="instagram" width="40px"></a>
+            </div>
+            <div class="col-3_md-6_sm-6 footer-content">
+                <p>Teamworks's Interiors</p>
+                <p>Steenweg 88</p>
+                <p>3540 Herk-De-Stad</p>
+            </div>
+            <div class="col-3_md-6_sm-6 footer-content">
+                <p>T. +32 (0)13 55 49 69</p>
+                <p>T. +32 (0)477 61 44 82</p>
+                <p><a href="mailto:info@teamworks.be" class="red">info@teamworks.be</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="grid container">
+            <div class="col-10_sm-12 disclaimer"><p>2019 TEAMWORK'S INTERIORS <span>|</span> PRIVACY & DISCLAIMER</p></div>
+            <div class="col-2_sm-12 dewitte"><p>Webdesign<a href="www.dewitte.be" target="_blank"> <img src="static/images/Dewitte_logo.png" alt="Dewitte"></a></p></div>
+        </div>
+    </footer>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/my-script.js"></script>
+    
+</body>
+</html>

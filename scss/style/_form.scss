@@ -1,0 +1,65 @@
+.contact-form{
+  color:$primary-color;
+  input{
+    border:none;
+    border-bottom:1px solid $primary-color;
+    outline: none;
+    width:100%;
+    height:44px;
+    transition:.7s ease;
+    color:$primary-color;
+    font-weight:600;
+    font-family: $font-family-2;
+    margin-bottom:15px;
+    &:hover,&:focus{
+      background-image: linear-gradient(to left, $white , rgba(212, 211, 211, 0.5));
+      padding-left:15px;
+      border-bottom:2px solid $secondary-color;
+    }
+    &::placeholder{
+      font-family: $font-family-2;
+      color:$primary-color;
+    }
+  }
+  textarea{
+    border:none;
+    border-bottom:1px solid $primary-color;
+    outline: none;
+    width:100%;
+    transition:.7s ease;
+    color:$primary-color;
+    font-weight:600;
+    font-family: $font-family-2;
+    padding-top:15px;
+    &:hover,&:focus{
+      background-image: linear-gradient(to left, $white , rgba(212, 211, 211, 0.5));
+      padding-left:15px;
+      border-bottom:2px solid $secondary-color;
+    }
+    &::placeholder{
+      font-family: $font-family-2;
+      color:$primary-color;
+    }
+  }
+  select{
+    border:none;
+    border-bottom:1px solid $primary-color;
+    outline: none;
+    width:100%;
+    height:44px;
+    transition:.7s ease;
+    color:$primary-color;
+    font-weight:600;
+    font-family: $font-family-2;
+    margin-bottom:15px;
+    &:hover,&:focus{
+      background-image: linear-gradient(to left, $white , rgba(212, 211, 211, 0.5));
+      padding-left:15px;
+      border-bottom:2px solid $secondary-color;
+    }
+    &::placeholder{
+      font-family: $font-family-2;
+      color:$primary-color;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "variables.scss";
+
+//Components
+@import "components/reset.scss";
+@import "components/gridlex/gridlex.scss";
+@import "components/lightslider.scss";
+@import "components/simplelightbox.scss";
+@import "components/swiper.scss";
+
+//mixins
+@import "style/mixins.scss";
+
+//fonts
+@import "fonts/fonts.scss";
+
+//Custom Style
+@import "style/general.scss";
+@import "style/nav.scss";
+@import "style/form.scss";
+@import "style/footer.scss";
+@import "style/typography.scss";
+@import "style/buttons.scss";
+@import "style/seperateblocks.scss";
+
+//Pages
+@import "pages/home.scss";

@@ -1,0 +1,374 @@
+html{
+  scroll-behavior: smooth;
+}
+hr{
+  border-top:1px;
+}
+ul.check{
+  list-style-image: url('../icons/check.png');
+  line-height: 2rem;
+}
+.red{
+  color:$secondary-color !important;
+}
+.white{
+  color:$white !important;
+}
+.bg--secondary{
+  background:$secondary-color;
+}
+.no--margin{
+  margin:0px !important;
+}
+.margin-top--10{
+  margin-top:10px !important;
+}
+.margin-bottom--10{
+  margin-bottom:10px !important;
+}
+.margin-top--15{
+  margin-top:15px !important;
+}
+.margin-bottom--15{
+  margin-bottom:15px !important;
+}
+.margin-top--25{
+  margin-top:25px !important;
+}
+.margin-bottom--25{
+  margin-bottom:25px !important;
+}
+.margin-top--50{
+  margin-top:50px !important;
+}
+.margin-bottom--50{
+  margin-bottom:50px !important;
+}
+.no--padding{
+  padding:0px !important;
+}
+.padding--50{
+  padding:50px !important;
+}
+.white--border{
+  border:1px solid $white;
+  border-radius:15px;
+  padding:10px;
+  margin:25px 0px;
+  font-size: 1.4rem;
+  font-weight:800;
+  color:$white;
+  @media (max-width: 767px) {
+    font-size: 1rem;
+    clear:both;
+  }
+  img{
+    width:25px;
+    @media (max-width: 767px) {
+      width:15px;
+    }
+  }
+}
+span{
+  font-family:$font-family;
+}
+.show {
+  display: block !important;
+}
+.circle{
+  border-radius:50;
+}
+//   ####   #####   ##     ##  ######    ###    ##  ##     ##  #####  #####
+//  ##     ##   ##  ####   ##    ##     ## ##   ##  ####   ##  ##     ##  ##
+//  ##     ##   ##  ##  ## ##    ##    ##   ##  ##  ##  ## ##  #####  #####
+//  ##     ##   ##  ##    ###    ##    #######  ##  ##    ###  ##     ##  ##
+//   ####   #####   ##     ##    ##    ##   ##  ##  ##     ##  #####  ##   ##
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container-fluid {
+  @include make-container();
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@media screen and ($bp-sm) {
+  .max-width-20 {
+    max-width: 40%;
+  }
+
+  .max-width-40 {
+    max-width: 40%;
+  }
+
+  .max-width-60 {
+    max-width: 60%;
+  }
+
+  .max-width-80 {
+    max-width: 80%;
+  }
+
+  .max-width-530 {
+    max-width: 530px;
+  }
+}
+.max-width-100 {
+  max-width: 100%;
+}
+
+//Used for align content with container in full width container
+//Use with .max-width-530
+.max-width-mr-auto {
+  @media screen and ($bp-md) {
+    margin-right: auto;
+    margin-left: inherit;
+  }
+}
+
+.max-width-ml-auto {
+  @media screen and ($bp-md) {
+    margin-right: inherit;
+    margin-left: auto;
+  }
+}
+
+//   ####  #####     ###     ####  ##  ##     ##   ####
+//  ##     ##  ##   ## ##   ##     ##  ####   ##  ##
+//   ###   #####   ##   ##  ##     ##  ##  ## ##  ##  ###
+//     ##  ##      #######  ##     ##  ##    ###  ##   ##
+//  ####   ##      ##   ##   ####  ##  ##     ##   ####
+.spacing-top {
+  padding-top: $spacing-top;
+
+  @media screen and ($bp-sm) {
+    padding-top: $spacing-top-sm;
+  }
+}
+
+.spacing-bot {
+  padding-bottom: $spacing-bot;
+
+  @media screen and ($bp-sm) {
+    padding-bottom: $spacing-bot-sm;
+  }
+}
+
+.spacing-top-small {
+  padding-top: $spacing-bot-small;
+}
+
+.spacing-bot-small {
+  padding-bottom: $spacing-bot-small;
+}
+
+.bg-spacing {
+  padding: 2em;
+
+  @media screen and ($bp-sm) {
+    padding: 3em;
+  }
+}
+
+.padding-reset {
+  padding: 0;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+.padding-L5{
+  padding-left:5px;
+}
+.padding-R5{
+  padding-right:5px;
+}
+.padding-L10{
+  padding-left:10px;
+}
+.padding-R10{
+  padding-right:10px;
+}
+.padding-L15{
+  padding-left:15px;
+}
+.padding-R15{
+  padding-right:15px;
+}
+
+
+//    ###    ##      ##   ####    ##     ##
+//   ## ##   ##      ##  ##       ####   ##
+//  ##   ##  ##      ##  ##  ###  ##  ## ##
+//  #######  ##      ##  ##   ##  ##    ###
+//  ##   ##  ######  ##   ####    ##     ##
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.fl-right {
+  float: right;
+}
+
+.fl-left {
+  float: left;
+}
+
+//   ####    #####  ##     ##  #####  #####      ###    ##
+//  ##       ##     ####   ##  ##     ##  ##    ## ##   ##
+//  ##  ###  #####  ##  ## ##  #####  #####    ##   ##  ##
+//  ##   ##  ##     ##    ###  ##     ##  ##   #######  ##
+//   ####    #####  ##     ##  #####  ##   ##  ##   ##  ######
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//Images
+// img {
+//   max-width: 100%;
+// }
+
+.img-wrapper {
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.img-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.img-left,
+.img-right {
+  width: 200px;
+}
+
+.img-left {
+  float: left;
+  margin: 0 1.5rem 1rem 0;
+}
+.img-right {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+}
+
+//Background
+.bg-gray {
+  background-color: #eeeeee;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+//Iframs
+//responsive Iframe
+[class*="iframe-wrapper"] {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+// 16x9 Aspect Ratio
+.iframe-wrapper-16x9 {
+  padding-bottom: 56.25%;
+}
+
+//4x3 Aspect Ratio
+.iframe-wrapper-4x3 {
+  padding-bottom: 75%;
+}
+
+.iframe-wrapper-300 {
+  padding-bottom: 300px;
+}
+
+[class*="iframe-wrapper"] iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.default-radius {
+  border-radius: $default-radius;
+  overflow: hidden;
+}
+
+//   ####  ##      ##  ####    #####  #####
+//  ##     ##      ##  ##  ##  ##     ##  ##
+//   ###   ##      ##  ##  ##  #####  #####
+//     ##  ##      ##  ##  ##  ##     ##  ##
+//  ####   ######  ##  ####    #####  ##   ##
+.lSSlideOuter .lSPager.lSpg {
+  > li {
+    text-indent: 0;
+    padding: 0 2.5px;
+    &::before {
+      display: none;
+    }
+    &:hover,
+    &.active {
+      a {
+        background-color: $secondary-color;
+      }
+    }
+    a {
+      background-color: $primary-color;
+      height: 12px;
+      width: 12px;
+    }
+  }
+}
+
+.lSAction > a {
+  background-image: url(/static/icons/swiper-controls.png);
+}
+
+//Lightbox
+.gnrl-gallery {
+  a {
+    display: inline-block;
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
